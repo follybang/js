@@ -1,19 +1,14 @@
-const transaction = {
-  currency: 'USD',
-  value: 170,
-  operation: 'sale',
-  agent: {
-    country: 'Ukraine',
-    company: 'NYSE',
-  },
-  'operation time': 1584029990001,
+const user = {
+  name: 'Tom',
+  age: 17,
 };
 
-const key = 'operation';
+user.hobby = 'football';
+const anotherKey = 'married';
+user[anotherKey] = false;
+user['favorite music'] = 'rock';
+user.address = {};
+user.address.country = 'Ukraine';
+user.address.building = 17;
 
-console.log(transaction.currency);
-console.log(transaction['value']);
-console.log(transaction[key]);
-console.log(transaction.agent['company']);
-console.log(transaction.agent.country);
-console.log(transaction['operation time']);
+console.log(user);
