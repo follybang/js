@@ -47,17 +47,10 @@ const sortContacts = (contacts, boolean) => {
 
   let res = [];
 
-  if (boolean === false) {
-    console.log(res);
-
+  if (boolean !== false) {
     res = contacts.sort((a, b) => b.name.localeCompare(a.name));
-    console.log(res);
   } else {
-    console.log(res);
-
     res = contacts.sort((a, b) => a.name.localeCompare(b.name));
-
-    console.log(res);
   }
 
   return res;
