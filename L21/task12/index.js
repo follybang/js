@@ -1,4 +1,4 @@
-export function squareNumbers() {
+export function squaredNumbers() {
   const data1 = document.querySelector('[data-number="5"]');
   data1.setAttribute('data-squared-number', data1.dataset.number * data1.dataset.number);
 
