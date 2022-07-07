@@ -1,4 +1,4 @@
-export function clearList() {
+function clearList() {
   document.querySelector('.categories').innerHTML = '';
 }
 
