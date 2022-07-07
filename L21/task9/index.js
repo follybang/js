@@ -18,5 +18,3 @@ export function finishList() {
   element8.textContent = '8';
   list.append(element8);
 }
-
-finishList();
