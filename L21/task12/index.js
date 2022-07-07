@@ -8,4 +8,3 @@ export function squaredNumbers() {
   const data3 = document.querySelector('[data-number="-3"]');
   data3.dataset.squaredNumbers = data3.dataset.number * data3.dataset.number;
 }
-squaredNumbers();
