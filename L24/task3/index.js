@@ -6,10 +6,10 @@ export function getDiff(startDate, endDate) {
     totalSec = new Date(startDate - endDate) / 1000;
   }
 
-  const days = Math.round(totalSec / (3600 * 24));
-  const hours = Math.round(totalSec / 3600) % 24;
-  const minutes = Math.round(totalSec / 60) % 60;
-  const seconds = Math.round(totalSec) % 60;
+  const days = Math.floor(totalSec / (3600 * 24));
+  const hours = Math.floor(totalSec / 3600) % 24;
+  const minutes = Math.floor(totalSec / 60) % 60;
+  const seconds = Math.floor(totalSec) % 60;
 
   return `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
