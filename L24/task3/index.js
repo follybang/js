@@ -1,4 +1,4 @@
-function getDiff(startDate, endDate) {
+export function getDiff(startDate, endDate) {
   let totalSec;
   if (startDate < endDate) {
     totalSec = new Date(endDate - startDate) / 1000;
