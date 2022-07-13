@@ -16,7 +16,7 @@ const checker = value => {
   return modifier;
 };
 
-const shmoment = initualDate => {
+export const shmoment = initualDate => {
   let modifiedDate = new Date(initualDate);
 
   const calc = {
