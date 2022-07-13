@@ -1,5 +1,6 @@
-const sum = a => b => a + b;
-const add3 = sum(3);
-const result = add3(5);
+export const mult = firstNumber => secondNumber => firstNumber * secondNumber;
+export const twice = mult(2);
+export const triple = mult(3);
 
-console.log(result);
+console.log(twice(20));
+console.log(triple(20));
