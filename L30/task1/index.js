@@ -6,8 +6,8 @@ export const addImage = imgSrc => {
     const containerElem = document.querySelector('.page');
     containerElem.append(imgElem);
 
-    const { width, height } = imgElem;
     const onImageLoaded = () => {
+      const { width, height } = imgElem;
       resolve({ width, height });
     };
 
