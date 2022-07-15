@@ -5,7 +5,7 @@
 // 2. set delay for resolve
 // 3. return delayed promise
 
-function delay(time) {
+export function delay(time) {
   const pr = new Promise(resolve => {
     setTimeout(() => {
       resolve();
