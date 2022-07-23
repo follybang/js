@@ -37,36 +37,36 @@ export function updateUser(userId, userData) {
   });
 }
 
-getUsersList().then(users => {
-  console.log(users);
-});
+// getUsersList().then(users => {
+//   console.log(users);
+// });
 
-getUserById('2').then(userData => {
-  console.log(userData);
-});
+// getUserById('2').then(userData => {
+//   console.log(userData);
+// });
 
-const newUserData = {
-  email: 'cool@email.com',
-  firstName: 'Iron',
-  lastName: 'Man',
-  age: 42,
-};
+// const newUserData = {
+//   email: 'cool@email.com',
+//   firstName: 'Iron',
+//   lastName: 'Man',
+//   age: 42,
+// };
 
-createUser(newUserData).then(() => {
-  console.log('User created');
-});
+// createUser(newUserData).then(() => {
+//   console.log('User created');
+// });
 
-const updatedUserData = {
-  email: 'new@email.com',
-  firstName: 'John',
-  lastName: 'Doe',
-  age: 17,
-};
+// const updatedUserData = {
+//   email: 'new@email.com',
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   age: 17,
+// };
 
-updateUser('1', updatedUserData).then(() => {
-  console.log('User updated');
-});
+// updateUser('1', updatedUserData).then(() => {
+//   console.log('User updated');
+// });
 
-deleteUser('2').then(() => {
-  console.log('User updated');
-});
+// deleteUser('2').then(() => {
+//   console.log('User updated');
+// });
