@@ -1,4 +1,4 @@
-const baseUrl = 'https://62dc0b824438813a261052e1.mockapi.io/v1';
+const baseUrl = 'https://62dc66a957ac3c3f3c5aaf2f.mockapi.io/api/v1/users';
 
 export function getUsersList() {
   return fetch(baseUrl).then(response => response.json());
@@ -37,12 +37,12 @@ export function updateUser(userId, userData) {
   });
 }
 
-const newUserData = {
-  email: 'cool@email.com',
-  firstName: 'Iron',
-  lastName: 'Man',
-  age: 42,
-};
+// const newUserData = {
+//   email: 'cool@email.com',
+//   firstName: 'Iron',
+//   lastName: 'Man',
+//   age: 42,
+// };
 
 // createUser(newUserData).then(() => {
 //   console.log('User created');
