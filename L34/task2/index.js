@@ -37,13 +37,13 @@ export function updateUser(userId, userData) {
   });
 }
 
-// const newUserData = {
-//   id: '1',
-//   email: 'cool@email.com',
-//   firstName: 'Iron',
-//   lastName: 'Man',
-//   age: 42,
-// };
+const newUserData = {
+  id: '1',
+  email: 'cool@email.com',
+  firstName: 'Iron',
+  lastName: 'Man',
+  age: 42,
+};
 
 // createUser(newUserData).then(() => {
 //   console.log('User created');
@@ -57,13 +57,13 @@ export function updateUser(userId, userData) {
 //   console.log(userData);
 // });
 
-// const updatedUserData = {
-//   id: '100',
-//   email: 'new@email.com',
-//   firstName: 'John',
-//   lastName: 'Doe',
-//   age: 17,
-// };
+const updatedUserData = {
+  id: '100',
+  email: 'new@email.com',
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 17,
+};
 
 // updateUser('1', updatedUserData).then(() => {
 //   console.log('User updated');
