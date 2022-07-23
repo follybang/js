@@ -37,6 +37,14 @@ export function updateUser(userId, userData) {
   });
 }
 
+// getUsersList().then(users => {
+//   console.log(users);
+// });
+
+// getUserById('2').then(userData => {
+//   console.log(userData);
+// });
+
 // const newUserData = {
 //   email: 'cool@email.com',
 //   firstName: 'Iron',
@@ -46,14 +54,6 @@ export function updateUser(userId, userData) {
 
 // createUser(newUserData).then(() => {
 //   console.log('User created');
-// });
-
-// getUsersList().then(users => {
-//   console.log(users);
-// });
-
-// getUserById('1').then(userData => {
-//   console.log(userData);
 // });
 
 // const updatedUserData = {
@@ -67,6 +67,6 @@ export function updateUser(userId, userData) {
 //   console.log('User updated');
 // });
 
-// deleteUser('1').then(() => {
+// deleteUser('2').then(() => {
 //   console.log('User updated');
 // });
