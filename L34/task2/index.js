@@ -37,13 +37,12 @@ export function updateUser(userId, userData) {
   });
 }
 
-// const newUserData = {
-//   id: '1',
-//   email: 'cool@email.com',
-//   firstName: 'Iron',
-//   lastName: 'Man',
-//   age: 42,
-// };
+const newUserData = {
+  email: 'cool@email.com',
+  firstName: 'Iron',
+  lastName: 'Man',
+  age: 42,
+};
 
 // createUser(newUserData).then(() => {
 //   console.log('User created');
@@ -58,7 +57,6 @@ export function updateUser(userId, userData) {
 // });
 
 // const updatedUserData = {
-//   id: '100',
 //   email: 'new@email.com',
 //   firstName: 'John',
 //   lastName: 'Doe',
