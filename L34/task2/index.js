@@ -21,9 +21,6 @@ export function createUser(userData) {
 export function deleteUser(userId) {
   return fetch(`${baseUrl}/${userId}`, {
     method: 'DELETE',
-    headers: {
-      'Content-Type': 'application/json;charset=utf-8',
-    },
   });
 }
 
@@ -67,6 +64,6 @@ export function updateUser(userId, userData) {
 //   console.log('User updated');
 // });
 
-// deleteUser('2').then(() => {
+// deleteUser('12').then(() => {
 //   console.log('User updated');
 // });
