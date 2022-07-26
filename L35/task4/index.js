@@ -1,7 +1,7 @@
 const testData = '{"name":"Tom"}';
 const testData2 = '"name":"Tom"}';
 
-function parseUser(jsonString) {
+export function parseUser(jsonString) {
   try {
     return JSON.parse(jsonString);
   } catch {
