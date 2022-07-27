@@ -32,4 +32,4 @@ const onClickButton = async () => {
   }
 };
 
-// showUserButtonElem.addEventListener('click', onClickButton);
+showUserButtonElem.addEventListener('click', onClickButton);
