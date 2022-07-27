@@ -8,6 +8,6 @@ export const fetchUser = async userId => {
     const data = await response.json();
     return data;
   } catch (err) {
-    throw new Error('Failed to fetch');
+    throw new Error('Failed to get user data');
   }
 };
