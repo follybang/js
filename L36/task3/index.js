@@ -1,6 +1,5 @@
 const getData = async userId => {
   const data = await fetch(`https://api.github.com/users/${userId}`).then(resp => resp.json());
-
   return data;
 };
 
