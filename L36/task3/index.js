@@ -12,7 +12,7 @@ const userDataRequest = async userId => {
   }
 };
 
-const getUsersBlogs = userIdArr => {
+export const getUsersBlogs = userIdArr => {
   try {
     const promisesArr = userIdArr.map(el => userDataRequest(el).then(response => response.blog));
 
