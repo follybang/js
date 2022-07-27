@@ -12,7 +12,7 @@
 
 // const result = func();
 
-const getUser = async userId => {
+export const getUser = async userId => {
   try {
     const response = await fetch(`https://api.github.com/users/${userId}`);
     if (!response.ok) {
