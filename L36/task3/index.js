@@ -1,12 +1,25 @@
-const getData = async userId => {
-  const data = await fetch(`https://api.github.com/users/${userId}`).then(resp => resp.json());
-  return data;
+const userDataRequest = async userId => {
+  try {
+    const response = await fetch(`https://api.github.com/users/${userId}`);
+    if (!response.ok) {
+      return null;
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    throw new Error('Failed to fetch');
+  }
 };
 
-export const getUsersBlogs = usersIdArray => {
-  const promisesArr = usersIdArray.map(el => getData(el).then(resp => resp.blog));
-  return Promise.all(promisesArr);
+const getUsersBlogs = userIdArr => {
+  try {
+    const promisesArr = userIdArr.map(el => userDataRequest(el).then(response => response.blog));
+
+    return Promise.all(promisesArr);
+  } catch {
+    throw new Error('Failed to fetch');
+  }
 };
 
-getUsersBlogs(['google', 'facebook', 'reactjs']).then(linksList => console.log(linksList));
-getUsersBlogs(['microsoft']).then(linksList => console.log(linksList));
+// getUsersBlogs(['google', 'facebook']).then(linksList => console.log(linksList));
